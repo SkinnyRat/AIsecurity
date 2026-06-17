@@ -1,4 +1,4 @@
-# Open WebUI Pentesting Lab Notes – Day 1
+# Open WebUI Pentesting Lab Notes 
 
 ## Objective
 
