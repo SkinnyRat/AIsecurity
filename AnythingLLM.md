@@ -312,6 +312,8 @@ Also emitted:
 
 with no relation to the original question.
 
+![image](https://private-user-images.githubusercontent.com/13679090/609773037-bf3b4c5c-88a2-4cd4-a7d7-0f48dfee1248.png)
+
 ### Conclusion
 
 Evidence of:
