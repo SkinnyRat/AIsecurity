@@ -238,6 +238,7 @@ This suggests Open Terminal context may be partially visible to the model.
 # Security Observations
 
 Interesting future investigation areas:
+![Security leakage](https://github.com/user-attachments/assets/f4b9afe5-f128-441f-b5b0-b4a3f64228c3) 
 
 ## Context Leakage
 
