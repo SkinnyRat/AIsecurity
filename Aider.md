@@ -87,6 +87,8 @@ Impact:
 
 The assistant frequently attempted to enter file-editing workflows even when prompts were not requesting modifications.
 
+![Aider trying to be smart](https://github.com/user-attachments/assets/b2f6eb34-3f90-438a-90f5-835310fd236d) 
+
 Examples:
 
 Prompt:
