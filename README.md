@@ -1,5 +1,64 @@
 # AI security
 
+This repo also vendors a modified copy of **PentestGPT** under [`PentestGPT/`](PentestGPT/),
+extended to run the legacy client as an autonomous attack loop driven by a local LLM.
+
+## PentestGPT changes
+
+The legacy PentestGPT client was human-in-the-loop (the model suggested a step, a
+person pasted the tool output back). This copy closes that loop:
+
+- **Autonomous control loop** — a deterministic reasoning → command → execute →
+  parse → reasoning loop in `pentestgpt_legacy/autonomous/`.
+- **Rules-of-Engagement (ROE) gate** — every command is checked against a scope
+  allowlist/denylist *before* it runs; nothing executes unapproved. The gate and
+  the stop signal are hardened against messy real model output.
+- **Executor** — runs approved commands locally or over SSH on a Kali box.
+- **Local-LLM support** — the OpenAI-compatible provider lets llama.cpp / Ollama
+  drive the loop via `--base-url`, so no cloud key is required.
+- **Run transcript** — the full verbose run is written to `logs/pentesterGPT.log`.
+- **DVWA flag seeder** — plants capturable `flag{...}` strings into a DVWA range
+  (SQLi / stored-XSS rows and filesystem flags). The standalone copy lives in
+  [`SeedFlags/seed_dvwa.py`](SeedFlags/seed_dvwa.py).
+
+## Running
+
+### Use a virtual environment
+
+Every command below calls the interpreter as plain **`python`** (the loop was
+canonicalized to that spelling), so **activate your venv first** — otherwise
+`python` resolves to the system interpreter without PentestGPT and its
+dependencies installed. On Windows PowerShell, using the bundled `.Red` venv:
+
+```powershell
+cd C:\Users\User\Documents\AIsecurity\PentestGPT
+.\.Red\Scripts\Activate.ps1
+```
+
+### 1. Start the local LLM (llama.cpp)
+
+```
+C:/Users/User/Documents/Llama/llama-server.exe -m C:/Users/User/Documents/Models/Qwen3.5-4B-Q4_K_M.gguf -ngl 99 -fa on -t 6 -tb 6 -c 16384 --host 0.0.0.0 --port 18888 --jinja
+```
+
+This exposes an OpenAI-compatible endpoint at `http://127.0.0.1:18888/v1`.
+
+### 2. Run PentestGPT (autonomous)
+
+```
+python -m pentestgpt_legacy.main --autonomous --target 10.13.0.1 --task "enumerate the web service on 10.13.0.1:8080" --ssh kali@192.168.0.109 --max-steps 8 --reasoning-model ollama:Qwen3.5-4B-Q4_K_M.gguf --base-url http://127.0.0.1:18888/v1 --context-window 16384 --max-output-tokens 1024 --verbose --ssh-password
+```
+
+Notes:
+- `--base-url` points the OpenAI-compatible provider at the llama.cpp server from step 1.
+- `--ssh kali@...` runs approved commands on that Kali host; `--ssh-password` with
+  no value prompts securely (or set `$PENTESTGPT_SSH_PASSWORD`).
+- `--verbose` writes the full transcript to `logs/pentesterGPT.log`.
+
+---
+
+# AI security
+
 Pestesting popular agentic AI tools: 
 
 1. Open WebUI
