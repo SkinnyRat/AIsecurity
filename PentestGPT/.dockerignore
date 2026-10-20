@@ -1,0 +1,26 @@
+# Keep the build context small and free of secrets / runtime state.
+.git
+.venv
+.env
+.env.*
+# Credentials & local state must never enter image layers (mounted as volumes instead)
+.claude
+.codex
+workspace/
+runs/
+logs/
+# The benchmark is deliberately out of the tool image (it drives the container from outside)
+benchmark/
+# Build/test caches & artifacts
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+**/__pycache__/
+*.pyc
+.idea/
+.DS_Store

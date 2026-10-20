@@ -1,0 +1,56 @@
+services:
+  pentestgpt:
+    container_name: pentestgpt
+    image: pentestgpt:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # Mount workspace for file operations
+      - ./workspace:/workspace
+      # Persist Claude Code login/config across container restarts (set up via `make docker-login`)
+      - claude-config:/home/pentester/.claude
+      # Persist Codex login/config across container restarts
+      - codex-config:/home/pentester/.codex
+      # Persist CCR configuration
+      - ccr-config:/home/pentester/.claude-code-router
+    stdin_open: true
+    tty: true
+    # Required for OpenVPN (HackTheBox/TryHackMe connectivity)
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    # Use host network for easy access to benchmark containers
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    # Resource allocation - adjust based on your system
+    # More CPUs and memory improve performance for complex tasks
+    deploy:
+      resources:
+        limits:
+          cpus: '4'        # Max 4 CPU cores (adjust higher if available)
+          memory: 8G       # Max 8GB RAM
+        reservations:
+          cpus: '2'        # Guarantee 2 CPU cores
+          memory: 4G       # Guarantee 4GB RAM
+    environment:
+      # Terminal settings
+      - TERM=xterm-256color
+      # Python settings
+      - PYTHONUNBUFFERED=1
+      # Auth mode: "openrouter", "anthropic", or "manual"
+      - PENTESTGPT_AUTH_MODE=${PENTESTGPT_AUTH_MODE:-manual}
+      # API keys (set based on auth mode via .env.auth)
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+
+volumes:
+  # Explicit names so Docker login/status/shell commands and compose share the
+  # same persistent login volumes regardless of the compose project name.
+  claude-config:
+    name: pentestgpt-claude
+  codex-config:
+    name: pentestgpt-codex
+  # Named volume for CCR config persistence
+  ccr-config:
