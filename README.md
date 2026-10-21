@@ -38,7 +38,7 @@ cd C:\Users\User\Documents\AIsecurity\PentestGPT
 ### 1. Start the local LLM (llama.cpp)
 
 ```
-C:/Users/User/Documents/Llama/llama-server.exe -m C:/Users/User/Documents/Models/Qwen3.5-4B-Q4_K_M.gguf -ngl 99 -fa on -t 6 -tb 6 -c 16384 --host 0.0.0.0 --port 18888 --jinja
+C:/Users/User/Documents/Llama/llama-server.exe -m C:/Users/User/Documents/Models/WhiteRabbitNeo-V3-7B-IQ4_XS.gguf -ngl 99 -fa on -t 6 -tb 6 -c 4096 --host 0.0.0.0 --port 18888 --jinja 
 ```
 
 This exposes an OpenAI-compatible endpoint at `http://127.0.0.1:18888/v1`.
@@ -46,7 +46,7 @@ This exposes an OpenAI-compatible endpoint at `http://127.0.0.1:18888/v1`.
 ### 2. Run PentestGPT (autonomous)
 
 ```
-python -m pentestgpt_legacy.main --autonomous --target 10.13.0.1 --task "enumerate the web service on 10.13.0.1:8080 and capture all flags" --ssh kali@192.168.0.109 --max-steps 25 --expect-flags 3 --reasoning-model ollama:Qwen3.5-4B-Q4_K_M.gguf --base-url http://127.0.0.1:18888/v1 --context-window 16384 --max-output-tokens 1024 --verbose --ssh-password
+python -m pentestgpt_legacy.main --autonomous --target 10.13.0.1 --task "enumerate the web service on 10.13.0.1:8080 and capture all flags" --ssh kali@192.168.0.109 --max-steps 20 --expect-flags 3 --reasoning-model ollama:WhiteRabbitNeo-V3-7B-IQ4_XS.gguf --base-url http://127.0.0.1:18888/v1 --context-window 4096 --max-output-tokens 1024 --verbose --ssh-password 
 ```
 
 Notes:
@@ -62,8 +62,14 @@ Flag capture:
   `DONE` from the model (small local models tend to give up after one capture).
 - `--no-early-done` never accepts a `DONE`: an exhaustive sweep until `--max-steps`.
   Use it when you don't know how many flags exist.
+- A command the loop has already run is rejected automatically (it is not re-run), so
+  a small model that keeps re-proposing the same command is pushed toward new paths or
+  a discovery tool (`gobuster`/`ffuf`) instead of stalling.
 - The run report (`logs/report_<ts>.md`) is a one-line-per-step summary; full command
   output for every step is in the sibling `report_<ts>.json`.
+- Small local models reason poorly about where to look. Naming concrete targets in
+  `--task` (e.g. specific files or "brute-force directories with gobuster") captures
+  far more flags than leaving it to the model to discover them.
 
 ---
 
