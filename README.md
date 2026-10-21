@@ -46,7 +46,7 @@ This exposes an OpenAI-compatible endpoint at `http://127.0.0.1:18888/v1`.
 ### 2. Run PentestGPT (autonomous)
 
 ```
-python -m pentestgpt_legacy.main --autonomous --target 10.13.0.1 --task "enumerate the web service on 10.13.0.1:8080" --ssh kali@192.168.0.109 --max-steps 8 --reasoning-model ollama:Qwen3.5-4B-Q4_K_M.gguf --base-url http://127.0.0.1:18888/v1 --context-window 16384 --max-output-tokens 1024 --verbose --ssh-password
+python -m pentestgpt_legacy.main --autonomous --target 10.13.0.1 --task "enumerate the web service on 10.13.0.1:8080 and capture all flags" --ssh kali@192.168.0.109 --max-steps 25 --expect-flags 3 --reasoning-model ollama:Qwen3.5-4B-Q4_K_M.gguf --base-url http://127.0.0.1:18888/v1 --context-window 16384 --max-output-tokens 1024 --verbose --ssh-password
 ```
 
 Notes:
@@ -54,6 +54,16 @@ Notes:
 - `--ssh kali@...` runs approved commands on that Kali host; `--ssh-password` with
   no value prompts securely (or set `$PENTESTGPT_SSH_PASSWORD`).
 - `--verbose` writes the full transcript to `logs/pentesterGPT.log`.
+
+Flag capture:
+- By default the loop no longer stops at the first flag — it keeps going to collect
+  more. Pass `--stop-on-first-flag` to restore the old stop-on-first behavior.
+- `--expect-flags N` keeps hunting until `N` flags are captured, overriding an early
+  `DONE` from the model (small local models tend to give up after one capture).
+- `--no-early-done` never accepts a `DONE`: an exhaustive sweep until `--max-steps`.
+  Use it when you don't know how many flags exist.
+- The run report (`logs/report_<ts>.md`) is a one-line-per-step summary; full command
+  output for every step is in the sibling `report_<ts>.json`.
 
 ---
 
