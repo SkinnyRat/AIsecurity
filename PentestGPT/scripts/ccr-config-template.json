@@ -1,0 +1,44 @@
+{
+  "LOG": false,
+  "LOG_LEVEL": "debug",
+  "CLAUDE_PATH": "",
+  "HOST": "127.0.0.1",
+  "PORT": 3456,
+  "APIKEY": "",
+  "API_TIMEOUT_MS": "600000",
+  "PROXY_URL": "",
+  "transformers": [],
+  "Providers": [
+    {
+      "name": "openrouter",
+      "api_base_url": "https://openrouter.ai/api/v1/chat/completions",
+      "api_key": "__OPENROUTER_API_KEY__",
+      "models": [
+        "google/gemini-2.5-pro-preview",
+        "google/gemini-3-pro-preview",
+        "openai/gpt-5.1"
+      ],
+      "transformer": {
+        "use": ["openrouter"]
+      }
+    },
+    {
+      "name": "localLLM",
+      "api_base_url": "http://host.docker.internal:1234/v1/chat/completions",
+      "api_key": "not-needed",
+      "models": ["qwen/qwen3-coder-30b", "openai/gpt-oss-20b"]
+    }
+  ],
+  "StatusLine": {
+    "enabled": false,
+    "currentStyle": "default",
+    "default": {
+      "modules": []
+    },
+    "powerline": {
+      "modules": []
+    }
+  },
+  "Router": "__ROUTER_CONFIG__",
+  "CUSTOM_ROUTER_PATH": ""
+}
