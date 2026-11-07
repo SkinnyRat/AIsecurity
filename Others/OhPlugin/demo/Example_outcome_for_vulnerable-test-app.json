@@ -1,0 +1,5382 @@
+{
+  "status": "incomplete",
+  "folder": "C:\\Users\\User\\Downloads\\Others\\vulnerable-test-app",
+  "manifests": [
+    "requirements.txt",
+    "package.json"
+  ],
+  "packages_scanned": 33,
+  "vulnerable_packages": 23,
+  "findings": [
+    {
+      "package": "flask",
+      "version": "1.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-68rp-wp8r-4726",
+      "aliases": [
+        "CVE-2026-27205",
+        "PYSEC-2026-2151"
+      ],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Flask session does not add `Vary: Cookie` header when accessed in some ways",
+      "source": "OSV"
+    },
+    {
+      "package": "flask",
+      "version": "1.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-m2qf-hxjv-5gpq",
+      "aliases": [
+        "CVE-2023-30861",
+        "PYSEC-2023-62"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Flask vulnerable to possible disclosure of permanent session cookie due to missing Vary: Cookie header",
+      "source": "OSV"
+    },
+    {
+      "package": "flask",
+      "version": "1.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2023-62",
+      "aliases": [
+        "CVE-2023-30861",
+        "GHSA-m2qf-hxjv-5gpq"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "flask",
+      "version": "1.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2151",
+      "aliases": [
+        "CVE-2026-27205",
+        "GHSA-68rp-wp8r-4726"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-462w-v97r-4m45",
+      "aliases": [
+        "CVE-2019-10906",
+        "PYSEC-2019-217"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N"
+        }
+      ],
+      "summary": "Jinja2 sandbox escape via string formatting",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-cpwx-vrp4-4pq7",
+      "aliases": [
+        "CVE-2025-27516",
+        "PYSEC-2026-1471"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Jinja2 vulnerable to sandbox breakout through attr filter selecting format method",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-g3rq-g295-4j3m",
+      "aliases": [
+        "CVE-2020-28493",
+        "PYSEC-2021-66",
+        "SNYK-PYTHON-JINJA2-1012994"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Regular Expression Denial of Service (ReDoS) in Jinja2",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-h5c8-rqwp-cp95",
+      "aliases": [
+        "CVE-2024-22195",
+        "PYSEC-2026-1473"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-h75v-3vvj-5mfj",
+      "aliases": [
+        "CVE-2024-34064",
+        "PYSEC-2026-1474"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-q2x7-8rv6-6q7h",
+      "aliases": [
+        "CVE-2024-56326",
+        "PYSEC-2026-1475"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Jinja has a sandbox breakout through indirect reference to format method",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2019-217",
+      "aliases": [
+        "CVE-2019-10906",
+        "GHSA-462w-v97r-4m45"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-66",
+      "aliases": [
+        "CVE-2020-28493",
+        "GHSA-g3rq-g295-4j3m",
+        "SNYK-PYTHON-JINJA2-1012994"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1471",
+      "aliases": [
+        "CVE-2025-27516",
+        "GHSA-cpwx-vrp4-4pq7"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Jinja2 vulnerable to sandbox breakout through attr filter selecting format method",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1473",
+      "aliases": [
+        "CVE-2024-22195",
+        "GHSA-h5c8-rqwp-cp95"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1474",
+      "aliases": [
+        "CVE-2024-34064",
+        "GHSA-h75v-3vvj-5mfj"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter",
+      "source": "OSV"
+    },
+    {
+      "package": "jinja2",
+      "version": "2.10",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1475",
+      "aliases": [
+        "CVE-2024-56326",
+        "GHSA-q2x7-8rv6-6q7h"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Jinja has a sandbox breakout through indirect reference to format method",
+      "source": "OSV"
+    },
+    {
+      "package": "pyyaml",
+      "version": "5.1",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-3pqx-4fqf-j49f",
+      "aliases": [
+        "CVE-2019-20477",
+        "PYSEC-2020-176"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Deserialization of Untrusted Data in PyYAML",
+      "source": "OSV"
+    },
+    {
+      "package": "pyyaml",
+      "version": "5.1",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-6757-jp84-gxfx",
+      "aliases": [
+        "CVE-2020-1747",
+        "PYSEC-2020-96"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Improper Input Validation in PyYAML",
+      "source": "OSV"
+    },
+    {
+      "package": "pyyaml",
+      "version": "5.1",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-8q59-q68h-6hv4",
+      "aliases": [
+        "CVE-2020-14343",
+        "PYSEC-2021-142"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Improper Input Validation in PyYAML",
+      "source": "OSV"
+    },
+    {
+      "package": "pyyaml",
+      "version": "5.1",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2020-176",
+      "aliases": [
+        "CVE-2019-20477",
+        "GHSA-3pqx-4fqf-j49f"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pyyaml",
+      "version": "5.1",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2020-96",
+      "aliases": [
+        "CVE-2020-1747",
+        "GHSA-6757-jp84-gxfx"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pyyaml",
+      "version": "5.1",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-142",
+      "aliases": [
+        "CVE-2020-14343",
+        "GHSA-8q59-q68h-6hv4"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "sqlalchemy",
+      "version": "1.2.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-38fc-9xqv-7f7q",
+      "aliases": [
+        "CVE-2019-7548",
+        "PYSEC-2019-124"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "SQLAlchemy is vulnerable to SQL Injection via group_by parameter ",
+      "source": "OSV"
+    },
+    {
+      "package": "sqlalchemy",
+      "version": "1.2.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-887w-45rq-vxgf",
+      "aliases": [
+        "CVE-2019-7164",
+        "PYSEC-2019-123"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "SQLAlchemy vulnerable to SQL Injection via order_by parameter",
+      "source": "OSV"
+    },
+    {
+      "package": "sqlalchemy",
+      "version": "1.2.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2019-123",
+      "aliases": [
+        "CVE-2019-7164",
+        "GHSA-887w-45rq-vxgf"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "sqlalchemy",
+      "version": "1.2.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2019-124",
+      "aliases": [
+        "CVE-2019-7548",
+        "GHSA-38fc-9xqv-7f7q"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-2gx3-rcp4-g85q",
+      "aliases": [
+        "CVE-2026-101917",
+        "PYSEC-2026-4140"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "summary": "PyJWT: PyJWKClient still amplifies unauthenticated JWKS fetches on unknown kid values (incomplete fix of CVE-2026-48524)",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-752w-5fwx-jx9f",
+      "aliases": [
+        "CVE-2026-32597",
+        "PYSEC-2026-120"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "summary": "PyJWT accepts unknown `crit` header extensions",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-9v7f-9g4p-ffgj",
+      "aliases": [
+        "CVE-2026-102267",
+        "PYSEC-2026-4144"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "PyJWT: PyJWKClient follows redirects when fetching JWKS",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-ffc3-869f-jxw9",
+      "aliases": [
+        "CVE-2026-102268",
+        "PYSEC-2026-4145"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "PyJWT: Asymmetric-PEM detection bypass: whitespace/line-ending-mutated public keys skip the HS/asymmetric confusion guard",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-ffqj-6fqr-9h24",
+      "aliases": [
+        "CVE-2022-29217",
+        "PYSEC-2022-202"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "Key confusion through non-blocklisted public key formats",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-hxm8-2xgr-2p9m",
+      "aliases": [
+        "CVE-2026-102269",
+        "PYSEC-2026-4147"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "PyJWT: Non-canonical signature segments enable raw-token revocation bypass",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-jwrc-g2q2-pq5p",
+      "aliases": [
+        "CVE-2026-102270",
+        "PYSEC-2026-4148"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "PyJWT: ReDoS vulnerability when calling the `is_pem_format` function.",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-pxh4-856f-4h89",
+      "aliases": [],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "PyJWT: HS256/384/512 verify accepts empty HMAC key via oct JWK (PyJWK/PyJWKClient) enabling token forgery",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-xgmm-8j9v-c9wx",
+      "aliases": [
+        "CVE-2026-48526",
+        "PYSEC-2026-179"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "PyJWT: Public-key JWK accepted as HMAC secret enables forged HS256 tokens when mixed families are allowed",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2022-202",
+      "aliases": [
+        "CVE-2022-29217",
+        "GHSA-ffqj-6fqr-9h24"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2025-183",
+      "aliases": [
+        "CVE-2025-45768"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-120",
+      "aliases": [
+        "CVE-2026-32597",
+        "GHSA-752w-5fwx-jx9f"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-175",
+      "aliases": [
+        "CVE-2026-48522",
+        "GHSA-993g-76c3-p5m4"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-177",
+      "aliases": [
+        "CVE-2026-48524",
+        "GHSA-fhv5-28vv-h8m8"
+      ],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-179",
+      "aliases": [
+        "CVE-2026-48526",
+        "GHSA-xgmm-8j9v-c9wx"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4140",
+      "aliases": [
+        "CVE-2026-101917",
+        "GHSA-2gx3-rcp4-g85q"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "summary": "PyJWT: PyJWKClient still amplifies unauthenticated JWKS fetches on unknown kid values (incomplete fix of CVE-2026-48524)",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4144",
+      "aliases": [
+        "CVE-2026-102267",
+        "GHSA-9v7f-9g4p-ffgj"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "PyJWT: PyJWKClient follows redirects when fetching JWKS",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4145",
+      "aliases": [
+        "CVE-2026-102268",
+        "GHSA-ffc3-869f-jxw9"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "PyJWT: Asymmetric-PEM detection bypass: whitespace/line-ending-mutated public keys skip the HS/asymmetric confusion guard",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4147",
+      "aliases": [
+        "CVE-2026-102269",
+        "GHSA-hxm8-2xgr-2p9m"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "PyJWT: Non-canonical signature segments enable raw-token revocation bypass",
+      "source": "OSV"
+    },
+    {
+      "package": "pyjwt",
+      "version": "1.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4148",
+      "aliases": [
+        "CVE-2026-102270",
+        "GHSA-jwrc-g2q2-pq5p"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "PyJWT: ReDoS vulnerability when calling the `is_pem_format` function.",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-22hg-r758-rrw9",
+      "aliases": [
+        "BIT-pillow-2026-112390",
+        "CVE-2026-112390"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Infinite loop in MIC n_frames when the embedded TIFF",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-254f-3936-288h",
+      "aliases": [
+        "BIT-pillow-2026-112391",
+        "CVE-2026-112391"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: PdfParser can recurse without limit in get_value() and linearize_page_tree()",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-27h8-gf7j-v5hc",
+      "aliases": [
+        "BIT-pillow-2026-112392",
+        "CVE-2026-112392",
+        "PYSEC-2026-4326"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: NULL dereference in ImagingExpand via rank filters on zero-size images",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-332p-7hrc-92wf",
+      "aliases": [
+        "BIT-pillow-2026-112393",
+        "CVE-2026-112393"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Heap buffer overflow in _tiffWriteProc when saving TIFF to BytesIO",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-3f63-hfp8-52jq",
+      "aliases": [
+        "BIT-pillow-2023-50447",
+        "CVE-2023-50447",
+        "PYSEC-2026-457"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Arbitrary Code Execution in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-3j72-p6qg-6xp7",
+      "aliases": [
+        "BIT-pillow-2026-96642",
+        "CVE-2026-96642",
+        "PYSEC-2026-4341"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: TarIO negative size field causes infinite CPU-spin loop",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-3wvg-mj6g-m9cv",
+      "aliases": [
+        "BIT-pillow-2021-27922",
+        "CVE-2021-27922",
+        "PYSEC-2021-41"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow Uncontrolled Resource Consumption",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-44wm-f244-xhp3",
+      "aliases": [
+        "BIT-pillow-2024-28219",
+        "CVE-2024-28219",
+        "PYSEC-2026-1793"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow buffer overflow vulnerability",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-4558-3h8r-v8xp",
+      "aliases": [
+        "BIT-pillow-2026-112394",
+        "CVE-2026-112394",
+        "PYSEC-2026-4327"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: P;2L and P;4L decoders may read 1 to 3 bytes past the passed buffer size",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-45hq-cxwh-f6vc",
+      "aliases": [
+        "BIT-pillow-2026-55379",
+        "CVE-2026-55379",
+        "PYSEC-2026-2255"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow `BdfFontFile`: `Image.new()` called without `_decompression_bomb_check()` \u2014 bomb protection bypass via font loading",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-4fx9-vc88-q2xc",
+      "aliases": [],
+      "severity": "LOW",
+      "severity_data": [],
+      "summary": "Infinite loop in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-4rm8-3hmm-39fg",
+      "aliases": [
+        "BIT-pillow-2026-96641",
+        "CVE-2026-96641",
+        "PYSEC-2026-4340"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow: Reachable undefined behavior in native integer operations, potentially leading to denial of service or logic integrity compromise",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-4x4j-2g7c-83w6",
+      "aliases": [
+        "BIT-pillow-2026-55798",
+        "CVE-2026-55798",
+        "PYSEC-2026-2257"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "summary": "Pillow: WindowsViewer.get_command() OS command injection via unescaped shell path",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-57h3-9rgr-c24m",
+      "aliases": [
+        "BIT-pillow-2021-25289",
+        "CVE-2021-25289",
+        "PYSEC-2021-35"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Out of bounds write in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-58r4-6rv3-gfh8",
+      "aliases": [
+        "BIT-pillow-2026-112397",
+        "CVE-2026-112397",
+        "PYSEC-2026-4329"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Out-of-bounds access in _imagingmorph on a zero-width image",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-5x8w-8jj5-q52h",
+      "aliases": [
+        "BIT-pillow-2026-112398",
+        "CVE-2026-112398",
+        "PYSEC-2026-4330"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Heap buffer overflow in FlashPix (FPX) JPEG decoding leads to code execution",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-5x94-69rx-g8h2",
+      "aliases": [
+        "BIT-pillow-2026-54060",
+        "CVE-2026-54060",
+        "PYSEC-2026-2254"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow: `FontFile.compile()`: `Image.new()` called without `_decompression_bomb_check()`",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-62p4-gmf7-7g93",
+      "aliases": [
+        "BIT-pillow-2026-54058",
+        "CVE-2026-54058",
+        "PYSEC-2026-3493"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Out-of-bounds read via attacker-controlled row stride on Pillow's mmap path (McIdas AREA files)",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-6r8x-57c9-28j4",
+      "aliases": [
+        "BIT-pillow-2026-59199",
+        "CVE-2026-59199",
+        "PYSEC-2026-3451"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow: Heap out-of-bounds write `Image.paste()` / `Image.crop()` via signed coordinate overflow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-74r2-7ff9-mjj2",
+      "aliases": [
+        "BIT-pillow-2026-112401",
+        "CVE-2026-112401"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Quadratic GIF comment concatenation allows DoS in Image.open()",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-7534-mm45-c74v",
+      "aliases": [
+        "BIT-pillow-2021-34552",
+        "CVE-2021-34552",
+        "PYSEC-2021-331"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Buffer Overflow in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-77gc-v2xv-rvvh",
+      "aliases": [
+        "BIT-pillow-2021-25287",
+        "CVE-2021-25287",
+        "PYSEC-2021-137"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Out-of-bounds Read in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-7mwm-ghpf-9vrm",
+      "aliases": [
+        "BIT-pillow-2026-112402",
+        "CVE-2026-112402",
+        "PYSEC-2026-4331"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Double free in ImagingScaleAffine on calloc failure via Image.transform",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-7r7m-5h27-29hp",
+      "aliases": [
+        "BIT-pillow-2021-28676",
+        "CVE-2021-28676",
+        "PYSEC-2021-92"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Potential infinite loop in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-8g5g-8vmr-9782",
+      "aliases": [
+        "BIT-pillow-2026-112403",
+        "CVE-2026-112403",
+        "PYSEC-2026-4332"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Heap buffer overflow in ImagingJpegDecode",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-8ghj-p4vj-mr35",
+      "aliases": [
+        "BIT-pillow-2023-44271",
+        "CVE-2023-44271",
+        "PYSEC-2023-227"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow Denial of Service vulnerability",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-8v84-f9pq-wr9x",
+      "aliases": [
+        "BIT-pillow-2026-54059",
+        "CVE-2026-54059",
+        "PYSEC-2026-2253"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow `PcfFontFile._load_bitmaps()`: `Image.frombytes()` called without `_decompression_bomb_check()` \u2014 bomb protection bypass via PCF font loading",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-8vj2-vxx3-667w",
+      "aliases": [
+        "BIT-pillow-2022-22817",
+        "CVE-2022-22817",
+        "PYSEC-2022-10"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Arbitrary expression injection in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-8xjq-8fcg-g5hw",
+      "aliases": [
+        "BIT-pillow-2021-25290",
+        "CVE-2021-25290",
+        "PYSEC-2021-36"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Out-of-bounds Write in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-95q3-8gr9-gm8w",
+      "aliases": [
+        "BIT-pillow-2021-27923",
+        "CVE-2021-27923",
+        "PYSEC-2021-42"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow Denial of Service by Uncontrolled Resource Consumption",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-98vv-pw6r-q6q4",
+      "aliases": [
+        "BIT-pillow-2021-23437",
+        "CVE-2021-23437",
+        "PYSEC-2021-317",
+        "SNYK-PYTHON-PILLOW-1319443"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Uncontrolled Resource Consumption in pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-9hw9-ch79-4vh6",
+      "aliases": [
+        "BIT-pillow-2026-59205",
+        "CVE-2026-59205",
+        "PYSEC-2026-3453"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow: Controlled heap out-of-bounds write in Pillow `ImageCmsTransform.apply()` via output mode mismatch",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-9hx2-hgq2-2g4f",
+      "aliases": [
+        "BIT-pillow-2021-25292",
+        "CVE-2021-25292",
+        "PYSEC-2021-38"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Regular Expression Denial of Service (ReDoS) in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-9j59-75qj-795w",
+      "aliases": [
+        "BIT-pillow-2022-24303",
+        "CVE-2022-24303",
+        "PYSEC-2022-168"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Path traversal in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-9v9v-9qvf-h2hj",
+      "aliases": [
+        "BIT-pillow-2026-96644",
+        "CVE-2026-96644",
+        "PYSEC-2026-4343"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Heap over-read in WMF/EMF rendering via 16-bit dimension truncation (Windows builds)",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-f2g6-542v-9j58",
+      "aliases": [
+        "BIT-pillow-2026-112406",
+        "CVE-2026-112406"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Infinite loop in PdfParser.rewrite_pages on page tree Parent cycle",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-f4w8-cv6p-x6r5",
+      "aliases": [
+        "BIT-pillow-2021-27921",
+        "CVE-2021-27921",
+        "PYSEC-2021-40"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow Denial of Service by Uncontrolled Resource Consumption",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-f5g8-5qq7-938w",
+      "aliases": [
+        "BIT-pillow-2020-35653",
+        "CVE-2020-35653",
+        "PYSEC-2021-69"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow Out-of-bounds Read",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-fj7v-r99m-22gq",
+      "aliases": [
+        "BIT-pillow-2026-59198",
+        "CVE-2026-59198",
+        "PYSEC-2026-3494"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:L"
+        }
+      ],
+      "summary": "Pillow TGA RLE encoder can serialize up to ~57 KB of adjacent heap data into generated images",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-g6rj-rv7j-xwp4",
+      "aliases": [
+        "BIT-pillow-2021-28675",
+        "CVE-2021-28675",
+        "PYSEC-2021-139"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow denial of service",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-g842-9rc4-69pw",
+      "aliases": [
+        "BIT-pillow-2026-96637",
+        "CVE-2026-96637",
+        "PYSEC-2026-4338"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Decompression bomb check bypass in SpiderImagePlugin.seek() leads to unbounded allocation DoS",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-gg2r-wvfm-q9rx",
+      "aliases": [
+        "BIT-pillow-2026-112892",
+        "CVE-2026-112892"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: MSP RLE decoder expands a tiny file into unbounded memory",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-hf64-x4gq-p99h",
+      "aliases": [
+        "BIT-pillow-2020-35655",
+        "CVE-2020-35655",
+        "PYSEC-2021-71"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:L"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow Out-of-bounds Read",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-hjfx-8p6c-g7gx",
+      "aliases": [
+        "BIT-pillow-2021-28678",
+        "CVE-2021-28678",
+        "PYSEC-2021-94"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Insufficient Verification of Data Authenticity in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-j7hp-h8jx-5ppr",
+      "aliases": [
+        "A-299477569",
+        "ASB-A-299477569",
+        "CVE-2023-4863",
+        "CVE-2023-5129",
+        "PYSEC-2026-1794",
+        "RUSTSEC-2023-0060",
+        "RUSTSEC-2023-0061"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "libwebp: OOB write in BuildHuffmanTable",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-jg86-v3jv-hrpm",
+      "aliases": [
+        "BIT-pillow-2026-112894",
+        "CVE-2026-112894"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Quadratic-time DoS in PDF save_all (PdfParser.next_object_id)",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-jjj6-mw9f-p565",
+      "aliases": [
+        "BIT-pillow-2026-59200",
+        "CVE-2026-59200",
+        "PYSEC-2026-3495"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow: Decompression Bomb DoS via PdfParser.PdfStream.decode()",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-m2vv-5vj5-2hm7",
+      "aliases": [
+        "BIT-pillow-2022-45198",
+        "CVE-2022-45198",
+        "PYSEC-2022-42979"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow vulnerable to Data Amplification attack.",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-mrfp-p49p-3hf2",
+      "aliases": [
+        "BIT-pillow-2026-96640",
+        "CVE-2026-96640"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow PDF append accepts malformed shared page-tree DAG causing resource exhaustion",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-mvg9-xffr-p774",
+      "aliases": [
+        "BIT-pillow-2021-25291",
+        "CVE-2021-25291",
+        "PYSEC-2021-37"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Out of bounds read in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-p43w-g3c5-g5mq",
+      "aliases": [
+        "BIT-pillow-2021-25293",
+        "CVE-2021-25293",
+        "PYSEC-2021-39"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Out of bounds read in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-p4wg-p73j-c528",
+      "aliases": [
+        "BIT-pillow-2026-112895",
+        "CVE-2026-112895"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Unbounded recursion parsing a PDF page tree or trailer chain (incomplete fix for CVE-2026-42310)",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-p8hx-v2p6-rp84",
+      "aliases": [
+        "BIT-pillow-2026-96636",
+        "CVE-2026-96636",
+        "PYSEC-2026-4337"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow: Decompression-bomb protection bypass via multi-frame seek() in MPO and DCX (MpoImageFile.seek / DcxImageFile.seek)",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-pchr-8j38-3x4p",
+      "aliases": [
+        "BIT-pillow-2026-112896",
+        "CVE-2026-112896",
+        "PYSEC-2026-4334"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: TIFF encoder ColorMap plane-size mismatch causes a heap out-of-bounds read",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-phj9-mv4w-65pm",
+      "aliases": [
+        "BIT-pillow-2026-55380",
+        "CVE-2026-55380",
+        "PYSEC-2026-2256"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow `GdImageFile._open()`: image dimensions accepted without `_decompression_bomb_check()`",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-pw3c-h7wp-cvhx",
+      "aliases": [
+        "BIT-pillow-2022-22815",
+        "CVE-2022-22815",
+        "PYSEC-2022-8"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Improper Initialization in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-q45j-58j2-45rg",
+      "aliases": [
+        "BIT-pillow-2026-112897",
+        "CVE-2026-112897"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: TiffDecode returns uninitialized memory as pixels for short JPEG strips",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-q5hq-fp76-qmrc",
+      "aliases": [
+        "BIT-pillow-2021-28677",
+        "CVE-2021-28677",
+        "PYSEC-2021-93"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Uncontrolled Resource Consumption in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-r73j-pqj5-w3x7",
+      "aliases": [
+        "BIT-pillow-2026-42310",
+        "CVE-2026-42310",
+        "PYSEC-2026-2874"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow has a PDF Parsing Trailer Infinite Loop (DoS)",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-rwv7-3v45-hg29",
+      "aliases": [
+        "BIT-pillow-2021-25288",
+        "CVE-2021-25288",
+        "PYSEC-2021-138"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow Out-of-bounds Read vulnerability",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-vqcj-wrf2-7v73",
+      "aliases": [
+        "BIT-pillow-2020-35654",
+        "CVE-2020-35654",
+        "PYSEC-2021-70"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow Out-of-bounds Write",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-vx6w-vv9f-6gvg",
+      "aliases": [
+        "CVE-2026-112899"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: EPS load(scale) lets Ghostscript render past the decompression bomb limit",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-w889-685w-c8fh",
+      "aliases": [
+        "BIT-pillow-2026-112900",
+        "CVE-2026-112900"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Argument Injection in Ghostscript call, potentially leading into RCE",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-wjx4-4jcj-g98j",
+      "aliases": [
+        "BIT-pillow-2026-42308",
+        "CVE-2026-42308",
+        "PYSEC-2026-165"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow has an integer overflow when processing fonts",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-xgh8-jp6q-p5x8",
+      "aliases": [
+        "BIT-pillow-2026-112901",
+        "CVE-2026-112901",
+        "PYSEC-2026-4335"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: ReDoS in XbmImagePlugin: 512-byte file stalls Image.open() for minutes",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-xj96-63gp-2gmr",
+      "aliases": [
+        "BIT-pillow-2026-59197",
+        "CVE-2026-59197",
+        "PYSEC-2026-3454"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+        }
+      ],
+      "summary": "Pillow: Heap out-of-bounds write in `ImageFilter.RankFilter` via integer overflow in `ImagingExpand`",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-xrcv-f9gm-v42c",
+      "aliases": [
+        "BIT-pillow-2022-22816",
+        "CVE-2022-22816",
+        "PYSEC-2022-9"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Out-of-bounds Read in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-xvh5-g6gv-559v",
+      "aliases": [
+        "CVE-2026-112902"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": " Pillow: Memory disclosure and segfault in libtiff encoder via crafted TIFF tags",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-137",
+      "aliases": [
+        "BIT-pillow-2021-25287",
+        "CVE-2021-25287",
+        "GHSA-77gc-v2xv-rvvh"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-138",
+      "aliases": [
+        "BIT-pillow-2021-25288",
+        "CVE-2021-25288",
+        "GHSA-rwv7-3v45-hg29"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-139",
+      "aliases": [
+        "BIT-pillow-2021-28675",
+        "CVE-2021-28675",
+        "GHSA-g6rj-rv7j-xwp4"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-317",
+      "aliases": [
+        "BIT-pillow-2021-23437",
+        "CVE-2021-23437",
+        "GHSA-98vv-pw6r-q6q4",
+        "SNYK-PYTHON-PILLOW-1319443"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-331",
+      "aliases": [
+        "BIT-pillow-2021-34552",
+        "CVE-2021-34552",
+        "GHSA-7534-mm45-c74v"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-35",
+      "aliases": [
+        "BIT-pillow-2021-25289",
+        "CVE-2021-25289",
+        "GHSA-57h3-9rgr-c24m"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-36",
+      "aliases": [
+        "BIT-pillow-2021-25290",
+        "CVE-2021-25290",
+        "GHSA-8xjq-8fcg-g5hw"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-37",
+      "aliases": [
+        "BIT-pillow-2021-25291",
+        "CVE-2021-25291",
+        "GHSA-mvg9-xffr-p774"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-38",
+      "aliases": [
+        "BIT-pillow-2021-25292",
+        "CVE-2021-25292",
+        "GHSA-9hx2-hgq2-2g4f"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-39",
+      "aliases": [
+        "BIT-pillow-2021-25293",
+        "CVE-2021-25293",
+        "GHSA-p43w-g3c5-g5mq"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-40",
+      "aliases": [
+        "BIT-pillow-2021-27921",
+        "CVE-2021-27921",
+        "GHSA-f4w8-cv6p-x6r5"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-41",
+      "aliases": [
+        "BIT-pillow-2021-27922",
+        "CVE-2021-27922",
+        "GHSA-3wvg-mj6g-m9cv"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-42",
+      "aliases": [
+        "BIT-pillow-2021-27923",
+        "CVE-2021-27923",
+        "GHSA-95q3-8gr9-gm8w"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-69",
+      "aliases": [
+        "BIT-pillow-2020-35653",
+        "CVE-2020-35653",
+        "GHSA-f5g8-5qq7-938w"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-70",
+      "aliases": [
+        "BIT-pillow-2020-35654",
+        "CVE-2020-35654",
+        "GHSA-vqcj-wrf2-7v73"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-71",
+      "aliases": [
+        "BIT-pillow-2020-35655",
+        "CVE-2020-35655",
+        "GHSA-hf64-x4gq-p99h"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-92",
+      "aliases": [
+        "BIT-pillow-2021-28676",
+        "CVE-2021-28676",
+        "GHSA-7r7m-5h27-29hp"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-93",
+      "aliases": [
+        "BIT-pillow-2021-28677",
+        "CVE-2021-28677",
+        "GHSA-q5hq-fp76-qmrc"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-94",
+      "aliases": [
+        "BIT-pillow-2021-28678",
+        "CVE-2021-28678",
+        "GHSA-hjfx-8p6c-g7gx"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2022-10",
+      "aliases": [
+        "BIT-pillow-2022-22817",
+        "CVE-2022-22817",
+        "GHSA-8vj2-vxx3-667w"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2022-168",
+      "aliases": [
+        "BIT-pillow-2022-24303",
+        "CVE-2022-24303",
+        "GHSA-9j59-75qj-795w"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2022-42979",
+      "aliases": [
+        "BIT-pillow-2022-45198",
+        "CVE-2022-45198",
+        "GHSA-m2vv-5vj5-2hm7"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2022-42980",
+      "aliases": [
+        "BIT-pillow-2022-45199",
+        "CVE-2022-45199",
+        "GHSA-q4mp-jvh2-76fj"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2022-8",
+      "aliases": [
+        "BIT-pillow-2022-22815",
+        "CVE-2022-22815",
+        "GHSA-pw3c-h7wp-cvhx"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2022-9",
+      "aliases": [
+        "BIT-pillow-2022-22816",
+        "CVE-2022-22816",
+        "GHSA-xrcv-f9gm-v42c"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2023-175",
+      "aliases": [],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2023-227",
+      "aliases": [
+        "BIT-pillow-2023-44271",
+        "CVE-2023-44271",
+        "GHSA-8ghj-p4vj-mr35"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-165",
+      "aliases": [
+        "BIT-pillow-2026-42308",
+        "CVE-2026-42308",
+        "GHSA-wjx4-4jcj-g98j"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1793",
+      "aliases": [
+        "BIT-pillow-2024-28219",
+        "CVE-2024-28219",
+        "GHSA-44wm-f244-xhp3"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow buffer overflow vulnerability",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1794",
+      "aliases": [
+        "A-299477569",
+        "ASB-A-299477569",
+        "CVE-2023-4863",
+        "CVE-2023-5129",
+        "GHSA-j7hp-h8jx-5ppr",
+        "RUSTSEC-2023-0060",
+        "RUSTSEC-2023-0061"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "libwebp: OOB write in BuildHuffmanTable",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2253",
+      "aliases": [
+        "BIT-pillow-2026-54059",
+        "CVE-2026-54059",
+        "GHSA-8v84-f9pq-wr9x"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2254",
+      "aliases": [
+        "BIT-pillow-2026-54060",
+        "CVE-2026-54060",
+        "GHSA-5x94-69rx-g8h2"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2255",
+      "aliases": [
+        "BIT-pillow-2026-55379",
+        "CVE-2026-55379",
+        "GHSA-45hq-cxwh-f6vc"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2256",
+      "aliases": [
+        "BIT-pillow-2026-55380",
+        "CVE-2026-55380",
+        "GHSA-phj9-mv4w-65pm"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2257",
+      "aliases": [
+        "BIT-pillow-2026-55798",
+        "CVE-2026-55798",
+        "GHSA-4x4j-2g7c-83w6"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2874",
+      "aliases": [
+        "BIT-pillow-2026-42310",
+        "CVE-2026-42310",
+        "GHSA-r73j-pqj5-w3x7"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow has a PDF Parsing Trailer Infinite Loop (DoS)",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-3451",
+      "aliases": [
+        "BIT-pillow-2026-59199",
+        "CVE-2026-59199",
+        "GHSA-6r8x-57c9-28j4"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-3453",
+      "aliases": [
+        "BIT-pillow-2026-59205",
+        "CVE-2026-59205",
+        "GHSA-9hw9-ch79-4vh6"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-3454",
+      "aliases": [
+        "BIT-pillow-2026-59197",
+        "CVE-2026-59197",
+        "GHSA-xj96-63gp-2gmr"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-3493",
+      "aliases": [
+        "BIT-pillow-2026-54058",
+        "CVE-2026-54058",
+        "GHSA-62p4-gmf7-7g93"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Pillow: Out-of-bounds read via attacker-controlled row stride on Pillow's mmap path (McIdas AREA files)",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-3494",
+      "aliases": [
+        "BIT-pillow-2026-59198",
+        "CVE-2026-59198",
+        "GHSA-fj7v-r99m-22gq"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:L"
+        }
+      ],
+      "summary": "Pillow TGA RLE encoder can serialize up to ~57 KB of adjacent heap data into generated images",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-3495",
+      "aliases": [
+        "BIT-pillow-2026-59200",
+        "CVE-2026-59200",
+        "GHSA-jjj6-mw9f-p565"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Pillow: Decompression Bomb DoS via PdfParser.PdfStream.decode()",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4326",
+      "aliases": [
+        "BIT-pillow-2026-112392",
+        "CVE-2026-112392",
+        "GHSA-27h8-gf7j-v5hc"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4327",
+      "aliases": [
+        "BIT-pillow-2026-112394",
+        "CVE-2026-112394",
+        "GHSA-4558-3h8r-v8xp"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4329",
+      "aliases": [
+        "BIT-pillow-2026-112397",
+        "CVE-2026-112397",
+        "GHSA-58r4-6rv3-gfh8"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4330",
+      "aliases": [
+        "BIT-pillow-2026-112398",
+        "CVE-2026-112398",
+        "GHSA-5x8w-8jj5-q52h"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4331",
+      "aliases": [
+        "BIT-pillow-2026-112402",
+        "CVE-2026-112402",
+        "GHSA-7mwm-ghpf-9vrm"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4332",
+      "aliases": [
+        "BIT-pillow-2026-112403",
+        "CVE-2026-112403",
+        "GHSA-8g5g-8vmr-9782"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4334",
+      "aliases": [
+        "BIT-pillow-2026-112896",
+        "CVE-2026-112896",
+        "GHSA-pchr-8j38-3x4p"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4335",
+      "aliases": [
+        "BIT-pillow-2026-112901",
+        "CVE-2026-112901",
+        "GHSA-xgh8-jp6q-p5x8"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4337",
+      "aliases": [
+        "BIT-pillow-2026-96636",
+        "CVE-2026-96636",
+        "GHSA-p8hx-v2p6-rp84"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4338",
+      "aliases": [
+        "BIT-pillow-2026-96637",
+        "CVE-2026-96637",
+        "GHSA-g842-9rc4-69pw"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4340",
+      "aliases": [
+        "BIT-pillow-2026-96641",
+        "CVE-2026-96641",
+        "GHSA-4rm8-3hmm-39fg"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4341",
+      "aliases": [
+        "BIT-pillow-2026-96642",
+        "CVE-2026-96642",
+        "GHSA-3j72-p6qg-6xp7"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-4343",
+      "aliases": [
+        "BIT-pillow-2026-96644",
+        "CVE-2026-96644",
+        "GHSA-9v9v-9qvf-h2hj"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "pillow",
+      "version": "8.0.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-457",
+      "aliases": [
+        "BIT-pillow-2023-50447",
+        "CVE-2023-50447",
+        "GHSA-3f63-hfp8-52jq"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Arbitrary Code Execution in Pillow",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-55x5-fj6c-h6m8",
+      "aliases": [
+        "CVE-2021-43818",
+        "PYSEC-2021-852"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:H/SA:N"
+        }
+      ],
+      "summary": "lxml's HTML Cleaner allows crafted and SVG embedded scripts to pass through",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-jq4v-f5q6-mjqq",
+      "aliases": [
+        "CVE-2021-28957",
+        "PYSEC-2021-19"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+        }
+      ],
+      "summary": "lxml vulnerable to Cross-Site Scripting ",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-pgww-xf46-h92r",
+      "aliases": [
+        "CVE-2020-27783",
+        "PYSEC-2020-62"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+        }
+      ],
+      "summary": "lxml vulnerable to Cross-site Scripting",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-vfmq-68hx-4jfw",
+      "aliases": [
+        "CVE-2026-41066",
+        "PYSEC-2026-87"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "lxml: Default configuration of iterparse() and ETCompatXMLParser() allows XXE to local files",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-wrxv-2j5q-m38w",
+      "aliases": [
+        "CVE-2022-2309",
+        "PYSEC-2022-230"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "lxml NULL Pointer Dereference allows attackers to cause a denial of service",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2020-62",
+      "aliases": [
+        "CVE-2020-27783",
+        "GHSA-pgww-xf46-h92r"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-19",
+      "aliases": [
+        "CVE-2021-28957",
+        "GHSA-jq4v-f5q6-mjqq"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-852",
+      "aliases": [
+        "CVE-2021-43818",
+        "GHSA-55x5-fj6c-h6m8"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2022-230",
+      "aliases": [
+        "CVE-2022-2309",
+        "GHSA-wrxv-2j5q-m38w"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "lxml",
+      "version": "4.5.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-87",
+      "aliases": [
+        "CVE-2026-41066",
+        "GHSA-vfmq-68hx-4jfw"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "paramiko",
+      "version": "2.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-45x7-px36-x8w8",
+      "aliases": [
+        "CVE-2023-48795",
+        "GO-2023-2402",
+        "PYSEC-2026-1758"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "summary": "Prefix Truncation Attack against ChaCha20-Poly1305 and Encrypt-then-MAC aka Terrapin",
+      "source": "OSV"
+    },
+    {
+      "package": "paramiko",
+      "version": "2.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-r374-rxx8-8654",
+      "aliases": [
+        "CVE-2026-44405",
+        "PYSEC-2026-2858"
+      ],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:N"
+        }
+      ],
+      "summary": "Paramiko rsakey.py allows the SHA-1 algorithm",
+      "source": "OSV"
+    },
+    {
+      "package": "paramiko",
+      "version": "2.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2022-166",
+      "aliases": [
+        "CVE-2022-24302",
+        "GHSA-f8q4-jwww-x3wv"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "paramiko",
+      "version": "2.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1758",
+      "aliases": [
+        "CVE-2023-48795",
+        "GHSA-45x7-px36-x8w8",
+        "GO-2023-2402"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "summary": "Prefix Truncation Attack against ChaCha20-Poly1305 and Encrypt-then-MAC aka Terrapin",
+      "source": "OSV"
+    },
+    {
+      "package": "paramiko",
+      "version": "2.7.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2858",
+      "aliases": [
+        "CVE-2026-44405",
+        "GHSA-r374-rxx8-8654"
+      ],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:N"
+        }
+      ],
+      "summary": "Paramiko rsakey.py allows the SHA-1 algorithm",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-3ww4-gg4f-jr7f",
+      "aliases": [
+        "CVE-2023-50782",
+        "PYSEC-2026-1283"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Python Cryptography package vulnerable to Bleichenbacher timing oracle attack",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-537c-gmf6-5ccf",
+      "aliases": [],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Vulnerable OpenSSL included in cryptography wheels",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-5cpq-8wj7-hf2v",
+      "aliases": [],
+      "severity": "LOW",
+      "severity_data": [],
+      "summary": "Vulnerable OpenSSL included in cryptography wheels",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-9v9h-cgj8-h64p",
+      "aliases": [
+        "CVE-2024-0727",
+        "PYSEC-2026-1285"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Null pointer dereference in PKCS12 parsing",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-jfhm-5ghh-2f97",
+      "aliases": [
+        "CVE-2023-49083",
+        "PYSEC-2023-254"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "cryptography vulnerable to NULL-dereference when loading PKCS7 certificates",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-jm77-qphf-c4w8",
+      "aliases": [],
+      "severity": "LOW",
+      "severity_data": [],
+      "summary": "pyca/cryptography's wheels include vulnerable OpenSSL",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-m959-cc7f-wv43",
+      "aliases": [
+        "CVE-2026-34073",
+        "PYSEC-2026-35"
+      ],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U"
+        }
+      ],
+      "summary": "cryptography has incomplete DNS name constraint enforcement on peer names",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-r6ph-v2qm-q3c2",
+      "aliases": [
+        "CVE-2026-26007",
+        "PYSEC-2026-2141"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+        }
+      ],
+      "summary": "cryptography Vulnerable to a Subgroup Attack Due to Missing Subgroup Validation for SECT Curves",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-rhm9-p9w5-fwm7",
+      "aliases": [
+        "CVE-2020-36242",
+        "PYSEC-2021-63"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "PyCA Cryptography symmetrically encrypting large values can lead to integer overflow",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-v8gr-m533-ghj9",
+      "aliases": [],
+      "severity": "LOW",
+      "severity_data": [],
+      "summary": "Vulnerable OpenSSL included in cryptography wheels",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-w7pp-m8wf-vj6r",
+      "aliases": [
+        "CVE-2023-23931",
+        "PYSEC-2023-11"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Cipher.update_into can corrupt memory if passed an immutable python object as the outbuf",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-x4qr-2fvf-3mr5",
+      "aliases": [
+        "CVE-2023-0286",
+        "PYSEC-2026-800",
+        "RUSTSEC-2023-0006"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H"
+        }
+      ],
+      "summary": "Vulnerable OpenSSL included in cryptography wheels",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-62",
+      "aliases": [
+        "CVE-2020-25659",
+        "GHSA-hggm-jpg3-v476"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2021-63",
+      "aliases": [
+        "CVE-2020-36242",
+        "GHSA-rhm9-p9w5-fwm7"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2023-11",
+      "aliases": [
+        "CVE-2023-23931",
+        "GHSA-w7pp-m8wf-vj6r"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2023-254",
+      "aliases": [
+        "CVE-2023-49083",
+        "GHSA-jfhm-5ghh-2f97"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2024-225",
+      "aliases": [
+        "CVE-2024-26130",
+        "GHSA-6vqw-3v5j-54x4"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1283",
+      "aliases": [
+        "CVE-2023-50782",
+        "GHSA-3ww4-gg4f-jr7f"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Python Cryptography package vulnerable to Bleichenbacher timing oracle attack",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1285",
+      "aliases": [
+        "CVE-2024-0727",
+        "GHSA-9v9h-cgj8-h64p"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Null pointer dereference in PKCS12 parsing",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2141",
+      "aliases": [
+        "CVE-2026-26007",
+        "GHSA-r6ph-v2qm-q3c2"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-35",
+      "aliases": [
+        "CVE-2026-34073",
+        "GHSA-m959-cc7f-wv43"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-3553",
+      "aliases": [
+        "CVE-2026-69249",
+        "GHSA-jwv3-5hgf-82ww"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "python-cryptography: Duplicate self-signed intermediates can cause exponential path-building",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-3554",
+      "aliases": [
+        "CVE-2026-69248",
+        "GHSA-m2h6-j472-rp4c"
+      ],
+      "severity": "UNKNOWN",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N/E:P"
+        }
+      ],
+      "summary": "python-cryptography verifier accepts wildcard DNS names allowing escape from permittedSubtrees",
+      "source": "OSV"
+    },
+    {
+      "package": "cryptography",
+      "version": "3.2",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-800",
+      "aliases": [
+        "CVE-2023-0286",
+        "GHSA-x4qr-2fvf-3mr5",
+        "RUSTSEC-2023-0006"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H"
+        }
+      ],
+      "summary": "Vulnerable OpenSSL included in cryptography wheels",
+      "source": "OSV"
+    },
+    {
+      "package": "gunicorn",
+      "version": "20.0.4",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-hc5x-x2vx-497g",
+      "aliases": [
+        "CVE-2024-6827",
+        "PYSEC-2026-1433"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "Gunicorn HTTP Request/Response Smuggling vulnerability",
+      "source": "OSV"
+    },
+    {
+      "package": "gunicorn",
+      "version": "20.0.4",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-w3h3-4rj7-4ph4",
+      "aliases": [
+        "CVE-2024-1135",
+        "PYSEC-2026-1434"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N"
+        }
+      ],
+      "summary": "Request smuggling leading to endpoint restriction bypass in Gunicorn",
+      "source": "OSV"
+    },
+    {
+      "package": "gunicorn",
+      "version": "20.0.4",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1433",
+      "aliases": [
+        "CVE-2024-6827",
+        "GHSA-hc5x-x2vx-497g"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "Gunicorn HTTP Request/Response Smuggling vulnerability",
+      "source": "OSV"
+    },
+    {
+      "package": "gunicorn",
+      "version": "20.0.4",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-1434",
+      "aliases": [
+        "CVE-2024-1135",
+        "GHSA-w3h3-4rj7-4ph4"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N"
+        }
+      ],
+      "summary": "Request smuggling leading to endpoint restriction bypass in Gunicorn",
+      "source": "OSV"
+    },
+    {
+      "package": "python-dotenv",
+      "version": "0.19.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "GHSA-mf9w-mj56-hr94",
+      "aliases": [
+        "CVE-2026-28684",
+        "PYSEC-2026-2270"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H"
+        }
+      ],
+      "summary": "python-dotenv: Symlink following in set_key allows arbitrary file overwrite via cross-device rename fallback",
+      "source": "OSV"
+    },
+    {
+      "package": "python-dotenv",
+      "version": "0.19.0",
+      "manifest": "requirements.txt",
+      "vulnerability_id": "PYSEC-2026-2270",
+      "aliases": [
+        "CVE-2026-28684",
+        "GHSA-mf9w-mj56-hr94"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H"
+        }
+      ],
+      "summary": "",
+      "source": "OSV"
+    },
+    {
+      "package": "lodash",
+      "version": "4.17.15",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-29mw-wpgm-hmr9",
+      "aliases": [
+        "CVE-2020-28500"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "summary": "Regular Expression Denial of Service (ReDoS) in lodash",
+      "source": "OSV"
+    },
+    {
+      "package": "lodash",
+      "version": "4.17.15",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-35jh-r3h4-6jhm",
+      "aliases": [
+        "CVE-2021-23337"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Command Injection in lodash",
+      "source": "OSV"
+    },
+    {
+      "package": "lodash",
+      "version": "4.17.15",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-p6mc-m468-83gw",
+      "aliases": [
+        "CVE-2020-8203"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H"
+        }
+      ],
+      "summary": "Prototype Pollution in lodash",
+      "source": "OSV"
+    },
+    {
+      "package": "lodash",
+      "version": "4.17.15",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-r5fr-rjxr-66jc",
+      "aliases": [
+        "CVE-2026-4800"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "lodash vulnerable to Code Injection via `_.template` imports key names",
+      "source": "OSV"
+    },
+    {
+      "package": "lodash",
+      "version": "4.17.15",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-xxjr-mmjv-4gpg",
+      "aliases": [
+        "CVE-2025-13465"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:H/SI:H/SA:H/E:P"
+        }
+      ],
+      "summary": "Lodash has Prototype Pollution Vulnerability in `_.unset`, `_.omit`, and `_.pullAt` functions",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-3g43-6gmg-66jw",
+      "aliases": [
+        "CVE-2026-44495"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L"
+        }
+      ],
+      "summary": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-3p68-rc4w-qgx5",
+      "aliases": [
+        "CVE-2025-62718"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N"
+        }
+      ],
+      "summary": "Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-43fc-jf86-j433",
+      "aliases": [
+        "CVE-2026-25639"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-4w2v-q235-vp99",
+      "aliases": [
+        "CVE-2020-28168"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "Axios vulnerable to Server-Side Request Forgery",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-5c9x-8gcm-mpgx",
+      "aliases": [
+        "CVE-2026-42034"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "summary": "Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-62hf-57xw-28j9",
+      "aliases": [
+        "CVE-2026-42039"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-6chq-wfr3-2hj9",
+      "aliases": [
+        "CVE-2026-42035"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "Axios: Header Injection via Prototype Pollution",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-7q8q-rj6j-mhjq",
+      "aliases": [
+        "CVE-2026-67319"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N"
+        }
+      ],
+      "summary": "Axios: Nested axios option objects can consume polluted prototype values",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-898c-q2cr-xwhg",
+      "aliases": [
+        "CVE-2026-44490"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "summary": "axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-cph5-m8f7-6c5x",
+      "aliases": [
+        "CVE-2021-3749"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "axios Inefficient Regular Expression Complexity vulnerability",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-fvcv-3m26-pcqx",
+      "aliases": [
+        "CVE-2026-40175"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-hfxv-24rg-xrqf",
+      "aliases": [
+        "CVE-2026-44496"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Axios: Regular Expression Denial of Service (ReDoS) via Cookie Name Injection",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-j5f8-grm9-p9fc",
+      "aliases": [
+        "CVE-2026-44486"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "Axios: Proxy-Authorization header leaks to redirect target when proxy is re-evaluated to direct connection",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-jr5f-v2jv-69x6",
+      "aliases": [
+        "CVE-2025-27152"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:P"
+        }
+      ],
+      "summary": "axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-m7pr-hjqh-92cm",
+      "aliases": [
+        "CVE-2026-42038"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "Axios: no_proxy bypass via IP alias allows SSRF",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-mmx7-hfxf-jppx",
+      "aliases": [
+        "CVE-2026-67316"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Axios: Prototype pollution gadgets can alter axios request construction",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-p92q-9vqr-4j8v",
+      "aliases": [
+        "CVE-2026-44487"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Axios: Proxy-Authorization Credential Leak to Origin Server Across HTTP-to-HTTPS Redirect in Axios Node.js HTTP Adapter",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-pf86-5x62-jrwf",
+      "aliases": [
+        "CVE-2026-42033"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "summary": "Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-pjwm-pj3p-43mv",
+      "aliases": [
+        "CVE-2026-44492"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-pmwg-cvhr-8vh7",
+      "aliases": [
+        "CVE-2026-42043"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Axios: Incomplete Fix for CVE-2025-62718 \u2014 NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-vf2m-468p-8v99",
+      "aliases": [
+        "CVE-2026-42036"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "summary": "Axios: HTTP adapter streamed responses bypass maxContentLength",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-w9j2-pvgh-6h63",
+      "aliases": [
+        "CVE-2026-42041"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-wf5p-g6vw-rhxx",
+      "aliases": [
+        "CVE-2023-45857"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "summary": "Axios Cross-Site Request Forgery Vulnerability",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-xhjh-pmcv-23jw",
+      "aliases": [
+        "CVE-2026-42040"
+      ],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "summary": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+      "source": "OSV"
+    },
+    {
+      "package": "axios",
+      "version": "0.21.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-xx6v-rp6x-q39c",
+      "aliases": [
+        "CVE-2026-42042"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion",
+      "source": "OSV"
+    },
+    {
+      "package": "moment",
+      "version": "2.29.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-8hfj-j24r-96c4",
+      "aliases": [
+        "CVE-2022-24785"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "summary": "Path Traversal: 'dir/../../filename' in moment.locale",
+      "source": "OSV"
+    },
+    {
+      "package": "moment",
+      "version": "2.29.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-wc69-rhjr-hc9g",
+      "aliases": [
+        "CVE-2022-31129"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Moment.js vulnerable to Inefficient Regular Expression Complexity",
+      "source": "OSV"
+    },
+    {
+      "package": "jquery",
+      "version": "2.2.4",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-6c3j-c64m-qhgq",
+      "aliases": [
+        "CVE-2019-11358",
+        "DRUPAL-CORE-2019-006",
+        "PYSEC-2026-628",
+        "SNYK-JS-JQUERY-174006"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "XSS in jQuery as used in Drupal, Backdrop CMS, and other products",
+      "source": "OSV"
+    },
+    {
+      "package": "jquery",
+      "version": "2.2.4",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-gxr4-xjj5-5px2",
+      "aliases": [
+        "BIT-drupal-2020-11022",
+        "CVE-2020-11022"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N"
+        }
+      ],
+      "summary": "Potential XSS vulnerability in jQuery",
+      "source": "OSV"
+    },
+    {
+      "package": "jquery",
+      "version": "2.2.4",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-jpcq-cgw6-v4j6",
+      "aliases": [
+        "BIT-drupal-2020-11023",
+        "CVE-2020-11023"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N/E:H"
+        }
+      ],
+      "summary": "Potential XSS vulnerability in jQuery",
+      "source": "OSV"
+    },
+    {
+      "package": "jquery",
+      "version": "2.2.4",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-rmxg-73gg-4p98",
+      "aliases": [
+        "CVE-2015-9251"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Cross-Site Scripting (XSS) in jquery",
+      "source": "OSV"
+    },
+    {
+      "package": "express",
+      "version": "4.16.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-qw6h-vgh9-j6wx",
+      "aliases": [
+        "CVE-2024-43796"
+      ],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:L"
+        }
+      ],
+      "summary": "express vulnerable to XSS via response.redirect()",
+      "source": "OSV"
+    },
+    {
+      "package": "express",
+      "version": "4.16.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-rv95-896h-c2vc",
+      "aliases": [
+        "CVE-2024-29041"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Express.js Open Redirect in malformed URLs",
+      "source": "OSV"
+    },
+    {
+      "package": "node-fetch",
+      "version": "2.6.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-r683-j2x4-v87g",
+      "aliases": [
+        "CVE-2022-0235"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "node-fetch forwards secure headers to untrusted sites",
+      "source": "OSV"
+    },
+    {
+      "package": "node-fetch",
+      "version": "2.6.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-w7rc-rwvf-8q5r",
+      "aliases": [
+        "CVE-2020-15168"
+      ],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "summary": "The `size` option isn't honored after following a redirect in node-fetch",
+      "source": "OSV"
+    },
+    {
+      "package": "serialize-javascript",
+      "version": "2.1.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-5c6j-r48x-rmvq",
+      "aliases": [],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+      "source": "OSV"
+    },
+    {
+      "package": "serialize-javascript",
+      "version": "2.1.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-h9rv-jmmf-4pgx",
+      "aliases": [
+        "CVE-2019-16769"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "summary": "Cross-Site Scripting in serialize-javascript",
+      "source": "OSV"
+    },
+    {
+      "package": "serialize-javascript",
+      "version": "2.1.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-hxcc-f52p-wc94",
+      "aliases": [
+        "CVE-2020-7660"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Insecure serialization leading to RCE in serialize-javascript",
+      "source": "OSV"
+    },
+    {
+      "package": "serialize-javascript",
+      "version": "2.1.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-m5mm-p8h7-m29v",
+      "aliases": [
+        "CVE-2026-115754",
+        "CVE-2026-115897"
+      ],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N"
+        }
+      ],
+      "summary": "Serialize JavaScript: Cross-site scripting (XSS) via unescaped </script at the end of a serialized function body",
+      "source": "OSV"
+    },
+    {
+      "package": "minimist",
+      "version": "1.2.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-vh95-rmgr-6w4m",
+      "aliases": [
+        "CVE-2020-7598"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "summary": "Prototype Pollution in minimist",
+      "source": "OSV"
+    },
+    {
+      "package": "minimist",
+      "version": "1.2.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-xvch-5gv4-984h",
+      "aliases": [
+        "CVE-2021-44906"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Prototype Pollution in minimist",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-2cf5-4w76-r9qv",
+      "aliases": [],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:L/I:H/A:L"
+        }
+      ],
+      "summary": "Arbitrary Code Execution in handlebars",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-2qvq-rjwj-gvw9",
+      "aliases": [
+        "CVE-2026-33916"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Handlebars.js has Prototype Pollution Leading to XSS through Partial Template Injection",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-2w6w-674q-4c4q",
+      "aliases": [
+        "CVE-2026-33937"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Handlebars.js has JavaScript Injection via AST Type Confusion",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-3cqr-58rm-57f8",
+      "aliases": [
+        "CVE-2019-20920",
+        "SNYK-JS-HANDLEBARS-534478"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:L"
+        }
+      ],
+      "summary": "Arbitrary Code Execution in Handlebars",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-3mfm-83xf-c92r",
+      "aliases": [
+        "CVE-2026-33938"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Handlebars.js has JavaScript Injection via AST Type Confusion by tampering @partial-block",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-442j-39wm-28r2",
+      "aliases": [],
+      "severity": "LOW",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "summary": "Handlebars.js has a Property Access Validation Bypass in container.lookup",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-765h-qjxv-5f44",
+      "aliases": [
+        "CVE-2021-23383"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Prototype Pollution in handlebars",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-8r5x-fm3f-whwj",
+      "aliases": [
+        "CVE-2026-106446"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Handlebars: JavaScript Injection via AST Type Confusion in compile (bypass of CVE-2026-33937)",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-9cx6-37pm-9jff",
+      "aliases": [
+        "CVE-2026-33939"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Handlebars.js has Denial of Service via Malformed Decorator Syntax in Template Compilation",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-f2jv-r9rf-7988",
+      "aliases": [
+        "CVE-2021-23369"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Remote code execution in handlebars when compiling templates",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-g9r4-xpmj-mj65",
+      "aliases": [],
+      "severity": "HIGH",
+      "severity_data": [],
+      "summary": "Prototype Pollution in handlebars",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-p8wg-vrv2-v86f",
+      "aliases": [
+        "CVE-2026-106445"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Handlebars: JavaScript Injection via Own Property Check Bypass",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-q2c6-c6pm-g3gh",
+      "aliases": [],
+      "severity": "HIGH",
+      "severity_data": [],
+      "summary": "Arbitrary Code Execution in handlebars",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-xhpv-hc6g-r9c6",
+      "aliases": [
+        "CVE-2026-33940"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Handlebars.js has JavaScript Injection via AST Type Confusion when passing an object as dynamic partial",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-xjpj-3mr7-gcpf",
+      "aliases": [
+        "CVE-2026-33941"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Handlebars.js has JavaScript Injection in CLI Precompiler via Unescaped Names and Options",
+      "source": "OSV"
+    },
+    {
+      "package": "handlebars",
+      "version": "4.5.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-xw65-4hp5-5hc7",
+      "aliases": [
+        "CVE-2026-106444"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "summary": "Handlebars: JavaScript Injection via Unsafe Inline Embedding of Precompiled Templates",
+      "source": "OSV"
+    },
+    {
+      "package": "marked",
+      "version": "0.7.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-5v2h-r2cx-5xgj",
+      "aliases": [
+        "CVE-2022-21681"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Inefficient Regular Expression Complexity in marked",
+      "source": "OSV"
+    },
+    {
+      "package": "marked",
+      "version": "0.7.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-rrrm-qjm4-v8hf",
+      "aliases": [
+        "CVE-2022-21680"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "summary": "Inefficient Regular Expression Complexity in marked",
+      "source": "OSV"
+    },
+    {
+      "package": "underscore",
+      "version": "1.9.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-cf4h-3jhx-xvhq",
+      "aliases": [
+        "CVE-2021-23358"
+      ],
+      "severity": "CRITICAL",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "summary": "Arbitrary Code Execution in underscore",
+      "source": "OSV"
+    },
+    {
+      "package": "underscore",
+      "version": "1.9.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-qpx9-hpmf-5gmw",
+      "aliases": [
+        "CVE-2026-27601"
+      ],
+      "severity": "HIGH",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "summary": "Underscore has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack",
+      "source": "OSV"
+    },
+    {
+      "package": "yargs-parser",
+      "version": "13.1.0",
+      "manifest": "package.json",
+      "vulnerability_id": "GHSA-p9pc-299p-vxgp",
+      "aliases": [
+        "CVE-2020-7608",
+        "SNYK-JS-YARGSPARSER-560381"
+      ],
+      "severity": "MEDIUM",
+      "severity_data": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "summary": "yargs-parser Vulnerable to Prototype Pollution",
+      "source": "OSV"
+    }
+  ],
+  "errors": [
+    "requirements.txt:18: skipped non-exact or unsupported requirement.",
+    "requirements.txt:20: skipped non-exact or unsupported requirement."
+  ],
+  "source": "OSV.dev",
+  "retrieved_at": "2026-11-06T01:11:31.161303+00:00"
+}

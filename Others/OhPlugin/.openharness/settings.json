@@ -1,0 +1,6 @@
+{
+  "allow_project_plugins": true,
+  "enabled_plugins": {
+    "dependency_audit": true
+  }
+}

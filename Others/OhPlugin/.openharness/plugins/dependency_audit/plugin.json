@@ -1,0 +1,6 @@
+{
+  "name": "dependency_audit",
+  "version": "0.1.0",
+  "description": "Read-only dependency manifest vulnerability audit using OSV.dev",
+  "enabled_by_default": true
+}

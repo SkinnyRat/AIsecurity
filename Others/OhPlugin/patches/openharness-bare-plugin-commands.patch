@@ -1,0 +1,159 @@
+diff --git a/src/openharness/commands/registry.py b/src/openharness/commands/registry.py
+index e1c9874..5d78f25 100644
+--- a/src/openharness/commands/registry.py
++++ b/src/openharness/commands/registry.py
+@@ -4,6 +4,7 @@ from __future__ import annotations
+ 
+ import importlib.metadata
+ import json
++import logging
+ import os
+ import re
+ import shutil
+@@ -93,6 +94,8 @@ from openharness.skills.types import SkillDefinition
+ from openharness.tasks import get_task_manager
+ from openharness.plugins.types import PluginCommandDefinition
+ 
++logger = logging.getLogger(__name__)
++
+ if TYPE_CHECKING:
+     from openharness.config.settings import ProviderProfile
+     from openharness.state import AppStateStore
+@@ -2548,6 +2551,12 @@ def create_default_command_registry(
+     for plugin_command in plugin_commands or ():
+         if not plugin_command.user_invocable:
+             continue
++        if registry.lookup(f"/{plugin_command.name}") is not None:
++            logger.warning(
++                "Skipping plugin command %r because that slash command is already registered",
++                plugin_command.name,
++            )
++            continue
+ 
+         async def _plugin_command_handler(
+             args: str,
+diff --git a/src/openharness/engine/query.py b/src/openharness/engine/query.py
+index bc47515..1451e99 100644
+--- a/src/openharness/engine/query.py
++++ b/src/openharness/engine/query.py
+@@ -975,8 +975,10 @@ async def _execute_tool_call(
+                 "tool_registry": context.tool_registry,
+                 "ask_user_prompt": context.ask_user_prompt,
+                 **(context.tool_metadata or {}),
++                "permission_checker": context.permission_checker,
+             },
+             hook_executor=context.hook_executor,
++            session_state=context.tool_metadata,
+         ),
+     )
+     elapsed = time.monotonic() - t0
+diff --git a/src/openharness/plugins/loader.py b/src/openharness/plugins/loader.py
+index 552fc8b..c5f23ad 100644
+--- a/src/openharness/plugins/loader.py
++++ b/src/openharness/plugins/loader.py
+@@ -7,6 +7,7 @@ import importlib.util
+ import json
+ import logging
+ import os
++import re
+ import sys
+ from pathlib import Path
+ from typing import Any, Iterable
+@@ -457,6 +458,13 @@ def _load_single_command_file(
+     disable_model_invocation = bool(frontmatter.get("disable-model-invocation", False))
+     user_invocable_raw = frontmatter.get("user-invocable")
+     user_invocable = True if user_invocable_raw is None else bool(user_invocable_raw)
++    explicit_command_name = frontmatter.get("openharness-command")
++    if explicit_command_name is not None:
++        if not isinstance(explicit_command_name, str) or not re.fullmatch(r"[a-z][a-z0-9_-]*", explicit_command_name):
++            logger.warning("Ignoring invalid openharness-command in %s", file_path)
++            explicit_command_name = None
++        else:
++            command_name = explicit_command_name
+     return PluginCommandDefinition(
+         name=command_name,
+         description=description,
+diff --git a/src/openharness/tools/base.py b/src/openharness/tools/base.py
+index de9c29c..63e2b21 100644
+--- a/src/openharness/tools/base.py
++++ b/src/openharness/tools/base.py
+@@ -21,6 +21,7 @@ class ToolExecutionContext:
+     cwd: Path
+     metadata: dict[str, Any] = field(default_factory=dict)
+     hook_executor: HookExecutor | None = None
++    session_state: dict[str, Any] | None = None
+ 
+ 
+ @dataclass(frozen=True)
+diff --git a/tests/test_commands/test_registry.py b/tests/test_commands/test_registry.py
+index ce23c0a..d2dd8fd 100644
+--- a/tests/test_commands/test_registry.py
++++ b/tests/test_commands/test_registry.py
+@@ -721,6 +721,35 @@ async def test_plugin_command_registers_and_submits_prompt(tmp_path: Path, monke
+     assert result.submit_prompt == "Base workflow\n\napi"
+ 
+ 
++@pytest.mark.asyncio
++async def test_bare_plugin_command_registers_and_does_not_override_builtin(tmp_path: Path, monkeypatch):
++    monkeypatch.setenv("OPENHARNESS_CONFIG_DIR", str(tmp_path / "config"))
++    registry = create_default_command_registry(
++        plugin_commands=[
++            PluginCommandDefinition(
++                name="audit",
++                description="Audit dependencies",
++                content="Run dependency audit for $ARGUMENTS",
++            ),
++            PluginCommandDefinition(
++                name="help",
++                description="Would replace help",
++                content="Nope",
++            ),
++        ]
++    )
++    command, args = registry.lookup("/audit ./sample")
++    assert command is not None
++    assert command.name == "audit"
++    result = await command.handler(args, _make_context(tmp_path))
++    assert result.submit_prompt == "Run dependency audit for ./sample"
++
++    help_command, _ = registry.lookup("/help")
++    assert help_command is not None
++    assert help_command.name == "help"
++    assert "Available commands:" in (await help_command.handler("", _make_context(tmp_path))).message
++
++
+ @pytest.mark.asyncio
+ async def test_bundled_user_invocable_skill_registers_as_slash_command(tmp_path: Path, monkeypatch):
+     monkeypatch.setenv("OPENHARNESS_CONFIG_DIR", str(tmp_path / "config"))
+diff --git a/tests/test_plugins/test_loader.py b/tests/test_plugins/test_loader.py
+index 867eb83..3b23db3 100644
+--- a/tests/test_plugins/test_loader.py
++++ b/tests/test_plugins/test_loader.py
+@@ -123,6 +123,27 @@ def test_load_plugins_from_project_dir(tmp_path: Path, monkeypatch):
+     assert "demo" in plugin.mcp_servers
+ 
+ 
++def test_plugin_command_can_opt_in_to_bare_openharness_name(tmp_path: Path, monkeypatch):
++    monkeypatch.setenv("OPENHARNESS_CONFIG_DIR", str(tmp_path / "config"))
++    project = tmp_path / "repo"
++    plugins_root = project / ".openharness" / "plugins"
++    plugins_root.mkdir(parents=True)
++    plugin_dir = plugins_root / "audit-plugin"
++    command_dir = plugin_dir / "commands"
++    command_dir.mkdir(parents=True)
++    (plugin_dir / "plugin.json").write_text(
++        json.dumps({"name": "audit-plugin", "version": "1.0.0"}), encoding="utf-8"
++    )
++    (command_dir / "audit.md").write_text(
++        "---\ndescription: Audit dependencies\nopenharness-command: audit\n---\nRun the audit.\n",
++        encoding="utf-8",
++    )
++
++    plugins = load_plugins(Settings(allow_project_plugins=True), project)
++
++    assert [command.name for command in plugins[0].commands] == ["audit"]
++
++
+ def test_plugin_skills_and_hooks_are_merged(tmp_path: Path, monkeypatch):
+     monkeypatch.setenv("OPENHARNESS_CONFIG_DIR", str(tmp_path / "config"))
+     project = tmp_path / "repo"
